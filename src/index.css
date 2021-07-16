@@ -9,12 +9,12 @@ body {
   background-image: linear-gradient(
     45deg,
     #050dff 1.92%,
-    #f6f0cf 1.92%,
-    #f6f0cf 50%,
+    #fff 1.92%,
+    #fff 50%,
     #050dff 50%,
     #050dff 51.92%,
-    #f6f0cf 51.92%,
-    #f6f0cf 100%
+    #fff 51.92%,
+    #fff 100%
   );
   background-size: 36.77px 36.77px;
 }
