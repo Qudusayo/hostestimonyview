@@ -33,7 +33,7 @@ class Index extends Component {
                 const testimony = Object.keys(result).map((testKeys) => {
                     return result[testKeys];
                 });
-                console.log(testimony)
+                // console.log(testimony)
                 this.setState({
                     totalRecords: testimony,
                     records: testimony,
