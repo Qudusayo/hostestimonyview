@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1em;
+    min-height: 70vh;
+
+    .img{
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    div.info {
+        text-decoration: none;
+        color: #000000;
+        display: block;
+        width: 210px;
+
+        @media screen and (min-width: 1040px) {
+            width: 22%;
+        }
+
+        @media screen and (max-width: 940px) {
+            width: 30%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 90%;
+        }
+    }
+}
+
+.darkMode {
+    background-color: darken($color: #2b3945, $amount: 5%);
+}

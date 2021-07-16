@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    45deg,
+    #050dff 1.92%,
+    #f6f0cf 1.92%,
+    #f6f0cf 50%,
+    #050dff 50%,
+    #050dff 51.92%,
+    #f6f0cf 51.92%,
+    #f6f0cf 100%
+  );
+  background-size: 36.77px 36.77px;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(-259deg, #5e60e7 0, #9c7af2 65%);
+  border-radius: 25px;
+}

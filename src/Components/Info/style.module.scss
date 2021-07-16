@@ -1,0 +1,124 @@
+.preview {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    position: fixed;
+    background-image: linear-gradient(-259deg, #5e60e7 0, #9c7af2 65%);
+    // padding-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    background-color: white;
+    overflow-y: auto;
+    transition: all 0.3s linear;
+    box-sizing: border-box;
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background-color: white;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 0.1em;
+        font-weight: bolder;
+        color: red;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        transition: transform 0.2s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .userInfo {
+        display: flex;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 750px;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+        margin: auto;
+        background-color: #ffffff;
+
+        .sex {
+            width: 40%;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid rgb(175, 175, 175);
+            border-radius: 5px;
+        }
+
+        .info {
+            width: 50%;
+            padding: 0.5em 4%;
+
+            .flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0.5em auto;
+
+                div {
+                    text-align: left;
+                    flex: 1.5;
+
+                    &:nth-of-type(2) {
+                        flex: 1;
+                    }
+
+                    span {
+                        font-size: 0.7em;
+                        font-weight: bold;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 751px) {
+        .preview {
+            padding-top: 200.5em;
+        }
+
+        .userInfo {
+            flex-direction: column;
+            margin: 2em auto;
+
+            .sex {
+                height: 12em;
+                width: 100%;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .info {
+                width: 90%;
+                margin: auto;
+
+                .flex {
+                    flex-direction: column;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        // text-align: justify;
+                        font-size: 1em;
+                        word-break: break-all;
+                    }
+                }
+            }
+        }
+    }
+}
